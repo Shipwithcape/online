@@ -1,0 +1,95 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Body Styles */
+body {
+  font-family: 'Helvetica', Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Section Styling */
+.section {
+  background: #fff;
+  padding: 40px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+/* Form Styling */
+#quote-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input, Select, and Textarea Styling */
+#quote-form select,
+#quote-form input[type="text"],
+#quote-form input[type="email"],
+#quote-form input[type="tel"],
+#quote-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Style the readonly input for selected service */
+#quote-form input[readonly] {
+  background-color: #e9ecef;
+}
+
+/* Textarea adjustments */
+#quote-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Button Styling */
+#quote-form button {
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#quote-form button:hover {
+  background: #0056b3;
+}
+
+/* Address Fields Styling */
+#address-fields input,
+#address-fields select {
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .section {
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .section h2 {
+    font-size: 1.5em;
+  }
+}
